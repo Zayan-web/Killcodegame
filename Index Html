@@ -51,7 +51,7 @@
 <body>
 
   <div id="game-container">
-    <h1>Brightness Control Game</h1>
+    <h1>Haha imagine clicking this, press one now go full screen and press option 2 or you get hacked.</h1>
     <button id="option1-btn" onclick="lowerBrightness()">Option 1</button>
     <button id="option2-btn" onclick="raiseBrightness()">Option 2</button>
     <button id="fullscreen-btn" onclick="goFullscreen()">Go Fullscreen</button>
