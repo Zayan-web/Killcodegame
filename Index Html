@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brightness Game</title>
+  <title>Dumb peoples game</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -33,8 +33,7 @@
       border-radius: 5px;
       border: none;
     }
-    #option1-btn {
-      background-color: #ff6347; /* Red for Option 1 */
+   
     }
     #option2-btn {
       background-color: #32cd32; /* Green for Option 2 */
@@ -52,7 +51,6 @@
 
   <div id="game-container">
     <h1>Haha imagine clicking this, press one now go full screen and press option 2 or you get hacked.</h1>
-    <button id="option1-btn" onclick="lowerBrightness()">Option 1</button>
     <button id="option2-btn" onclick="raiseBrightness()">Option 2</button>
     <button id="fullscreen-btn" onclick="goFullscreen()">Go Fullscreen</button>
     <div id="brightness-status">Brightness: 100%</div>
@@ -74,12 +72,6 @@
       // Adjust the opacity of the control box based on the brightness level
       const opacity = Math.max(1 - (brightnessLevel / 2000), 0);
       document.getElementById('game-container').style.opacity = opacity;
-    }
-
-    function lowerBrightness() {
-      // Set brightness to the dimmest form (0%)
-      brightnessLevel = 0;
-      updateBrightness();
     }
 
     function raiseBrightness() {
